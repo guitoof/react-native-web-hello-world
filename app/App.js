@@ -4,7 +4,7 @@ import { connect }  from 'react-redux';
 import { appStyle } from './styles/styles';
 // dumb components
 import Header     from './components/Header';
-import HelloWorld from './components/HelloWorld';
+import Body from './components/Body';
 // actions
 import {
   toggleColor,
@@ -19,7 +19,7 @@ class ReactNativeWebHelloWorld extends Component {
     return (
       <View style={appStyle.reactNativeWeb}>
         <Header />
-        <HelloWorld
+        <Body
           onPress={() => dispatch(toggleColor())}
           color={color}
         />
