@@ -4,6 +4,7 @@ import {
   Text,
   StyleSheet,
 } from 'react-native';
+import { appStyle } from '../styles/styles';
 
 export default class HelloWorld extends Component {
   render() {
@@ -15,7 +16,7 @@ export default class HelloWorld extends Component {
       }
     });
     return (
-      <View>
+      <View style={appStyle.body}>
         <Text onPress={onPress} style={style.helloWorld}>Hello World</Text>
       </View>
     );
